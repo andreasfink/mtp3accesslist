@@ -13,5 +13,10 @@ FOUNDATION_EXPORT int plugin_exit(void);
 FOUNDATION_EXPORT NSString *plugin_name(void);
 FOUNDATION_EXPORT UMPlugin *plugin_create(void);
 
+FOUNDATION_EXPORT NSString *plugin_version(void);
+FOUNDATION_EXPORT NSString *plugin_build(void);
+FOUNDATION_EXPORT NSString *plugin_builddate(void);
+FOUNDATION_EXPORT NSString *plugin_compiledate(void);
+
 
 

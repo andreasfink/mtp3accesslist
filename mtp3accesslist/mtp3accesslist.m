@@ -8,6 +8,7 @@
 
 #import "mtp3accesslist.h"
 #import "UMMTP3AccessList.h"
+#import "version.h"
 
 int         plugin_init(void)
 {
@@ -27,4 +28,24 @@ NSString *  plugin_name(void)
 UMPlugin *  plugin_create(void)
 {
     return [[UMMTP3AccessList alloc]init];
+}
+
+NSString *plugin_version(void)
+{
+    return @(VERSION);
+}
+
+NSString *plugin_build(void)
+{
+    return @(BUILD);
+}
+
+NSString *plugin_builddate(void)
+{
+    return @(BUILDDATE);
+}
+
+NSString *plugin_compiledate(void)
+{
+    return @(COMPILEDATE);
 }

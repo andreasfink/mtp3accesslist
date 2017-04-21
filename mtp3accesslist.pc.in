@@ -1,0 +1,16 @@
+#ulibsmpp pkg-config source file
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: mtp3accesslist
+Cflags: -I${includedir}
+Libs: -L${libdir} -lmtp3accesslist
+
+Description: ulibmtp3 simple pointcode filter
+Version: @VERSION@
+Requires: ulibmtp3
+
+

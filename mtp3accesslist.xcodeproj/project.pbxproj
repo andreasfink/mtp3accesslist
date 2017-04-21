@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A60343041EA9C3BE00706C21 /* mtp3accesslist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60342FA1EA9C3BE00706C21 /* mtp3accesslist.framework */; };
 		A60343091EA9C3BE00706C21 /* mtp3accesslistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60343081EA9C3BE00706C21 /* mtp3accesslistTests.m */; };
-		A603430B1EA9C3BE00706C21 /* mtp3accesslist.h in Headers */ = {isa = PBXBuildFile; fileRef = A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A603430B1EA9C3BE00706C21 /* mtp3accesslist.h in Headers */ = {isa = PBXBuildFile; fileRef = A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A60343151EA9C3E500706C21 /* mtp3accesslist.m in Sources */ = {isa = PBXBuildFile; fileRef = A60343141EA9C3E500706C21 /* mtp3accesslist.m */; };
 		A60343171EA9C41700706C21 /* ulibmtp3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60343161EA9C41700706C21 /* ulibmtp3.framework */; };
 		A603431A1EA9C4EE00706C21 /* UMMTP3AccessList.h in Headers */ = {isa = PBXBuildFile; fileRef = A60343181EA9C4EE00706C21 /* UMMTP3AccessList.h */; };
@@ -17,6 +17,7 @@
 		A603431E1EA9C66800706C21 /* UMMTP3AccessListEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A603431C1EA9C66800706C21 /* UMMTP3AccessListEntry.h */; };
 		A603431F1EA9C66800706C21 /* UMMTP3AccessListEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A603431D1EA9C66800706C21 /* UMMTP3AccessListEntry.m */; };
 		A60343211EA9D37F00706C21 /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60343201EA9D37F00706C21 /* ulib.framework */; };
+		A60343231EA9D8C700706C21 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = A60343221EA9D8C700706C21 /* version.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		A603431C1EA9C66800706C21 /* UMMTP3AccessListEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMTP3AccessListEntry.h; sourceTree = "<group>"; };
 		A603431D1EA9C66800706C21 /* UMMTP3AccessListEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMTP3AccessListEntry.m; sourceTree = "<group>"; };
 		A60343201EA9D37F00706C21 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = ../../../../../Library/Frameworks/ulib.framework; sourceTree = "<group>"; };
+		A60343221EA9D8C700706C21 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		A60342FC1EA9C3BE00706C21 /* mtp3accesslist */ = {
 			isa = PBXGroup;
 			children = (
+				A60343221EA9D8C700706C21 /* version.h */,
 				A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */,
 				A60343141EA9C3E500706C21 /* mtp3accesslist.m */,
 				A60343181EA9C4EE00706C21 /* UMMTP3AccessList.h */,
@@ -117,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A603431A1EA9C4EE00706C21 /* UMMTP3AccessList.h in Headers */,
+				A60343231EA9D8C700706C21 /* version.h in Headers */,
 				A603431E1EA9C66800706C21 /* UMMTP3AccessListEntry.h in Headers */,
 				A603430B1EA9C3BE00706C21 /* mtp3accesslist.h in Headers */,
 			);
@@ -433,6 +437,7 @@
 				A60343101EA9C3BE00706C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A60343111EA9C3BE00706C21 /* Build configuration list for PBXNativeTarget "mtp3accesslistTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +446,7 @@
 				A60343131EA9C3BE00706C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
