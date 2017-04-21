@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60343041EA9C3BE00706C21 /* mtp3accesslist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60342FA1EA9C3BE00706C21 /* mtp3accesslist.framework */; };
+		A60343091EA9C3BE00706C21 /* mtp3accesslistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60343081EA9C3BE00706C21 /* mtp3accesslistTests.m */; };
+		A603430B1EA9C3BE00706C21 /* mtp3accesslist.h in Headers */ = {isa = PBXBuildFile; fileRef = A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A60343151EA9C3E500706C21 /* mtp3accesslist.m in Sources */ = {isa = PBXBuildFile; fileRef = A60343141EA9C3E500706C21 /* mtp3accesslist.m */; };
+		A60343171EA9C41700706C21 /* ulibmtp3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60343161EA9C41700706C21 /* ulibmtp3.framework */; };
+		A603431A1EA9C4EE00706C21 /* UMMTP3AccessList.h in Headers */ = {isa = PBXBuildFile; fileRef = A60343181EA9C4EE00706C21 /* UMMTP3AccessList.h */; };
+		A603431B1EA9C4EE00706C21 /* UMMTP3AccessList.m in Sources */ = {isa = PBXBuildFile; fileRef = A60343191EA9C4EE00706C21 /* UMMTP3AccessList.m */; };
+		A603431E1EA9C66800706C21 /* UMMTP3AccessListEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A603431C1EA9C66800706C21 /* UMMTP3AccessListEntry.h */; };
+		A603431F1EA9C66800706C21 /* UMMTP3AccessListEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A603431D1EA9C66800706C21 /* UMMTP3AccessListEntry.m */; };
+		A60343211EA9D37F00706C21 /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60343201EA9D37F00706C21 /* ulib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60343051EA9C3BE00706C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60342F11EA9C3BE00706C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60342F91EA9C3BE00706C21;
+			remoteInfo = mtp3accesslist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60342FA1EA9C3BE00706C21 /* mtp3accesslist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mtp3accesslist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mtp3accesslist.h; sourceTree = "<group>"; };
+		A60342FE1EA9C3BE00706C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60343031EA9C3BE00706C21 /* mtp3accesslistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mtp3accesslistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60343081EA9C3BE00706C21 /* mtp3accesslistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mtp3accesslistTests.m; sourceTree = "<group>"; };
+		A603430A1EA9C3BE00706C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60343141EA9C3E500706C21 /* mtp3accesslist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mtp3accesslist.m; sourceTree = "<group>"; };
+		A60343161EA9C41700706C21 /* ulibmtp3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibmtp3.framework; path = ../../../../../Library/Frameworks/ulibmtp3.framework; sourceTree = "<group>"; };
+		A60343181EA9C4EE00706C21 /* UMMTP3AccessList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMTP3AccessList.h; sourceTree = "<group>"; };
+		A60343191EA9C4EE00706C21 /* UMMTP3AccessList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMTP3AccessList.m; sourceTree = "<group>"; };
+		A603431C1EA9C66800706C21 /* UMMTP3AccessListEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMTP3AccessListEntry.h; sourceTree = "<group>"; };
+		A603431D1EA9C66800706C21 /* UMMTP3AccessListEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMTP3AccessListEntry.m; sourceTree = "<group>"; };
+		A60343201EA9D37F00706C21 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = ../../../../../Library/Frameworks/ulib.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60342F61EA9C3BE00706C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60343211EA9D37F00706C21 /* ulib.framework in Frameworks */,
+				A60343171EA9C41700706C21 /* ulibmtp3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60343001EA9C3BE00706C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60343041EA9C3BE00706C21 /* mtp3accesslist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60342F01EA9C3BE00706C21 = {
+			isa = PBXGroup;
+			children = (
+				A60342FC1EA9C3BE00706C21 /* mtp3accesslist */,
+				A60343071EA9C3BE00706C21 /* mtp3accesslistTests */,
+				A60342FB1EA9C3BE00706C21 /* Products */,
+				A60343201EA9D37F00706C21 /* ulib.framework */,
+				A60343161EA9C41700706C21 /* ulibmtp3.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		A60342FB1EA9C3BE00706C21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60342FA1EA9C3BE00706C21 /* mtp3accesslist.framework */,
+				A60343031EA9C3BE00706C21 /* mtp3accesslistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60342FC1EA9C3BE00706C21 /* mtp3accesslist */ = {
+			isa = PBXGroup;
+			children = (
+				A60342FD1EA9C3BE00706C21 /* mtp3accesslist.h */,
+				A60343141EA9C3E500706C21 /* mtp3accesslist.m */,
+				A60343181EA9C4EE00706C21 /* UMMTP3AccessList.h */,
+				A60343191EA9C4EE00706C21 /* UMMTP3AccessList.m */,
+				A603431C1EA9C66800706C21 /* UMMTP3AccessListEntry.h */,
+				A603431D1EA9C66800706C21 /* UMMTP3AccessListEntry.m */,
+				A60342FE1EA9C3BE00706C21 /* Info.plist */,
+			);
+			path = mtp3accesslist;
+			sourceTree = "<group>";
+		};
+		A60343071EA9C3BE00706C21 /* mtp3accesslistTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60343081EA9C3BE00706C21 /* mtp3accesslistTests.m */,
+				A603430A1EA9C3BE00706C21 /* Info.plist */,
+			);
+			path = mtp3accesslistTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A60342F71EA9C3BE00706C21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A603431A1EA9C4EE00706C21 /* UMMTP3AccessList.h in Headers */,
+				A603431E1EA9C66800706C21 /* UMMTP3AccessListEntry.h in Headers */,
+				A603430B1EA9C3BE00706C21 /* mtp3accesslist.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A60342F91EA9C3BE00706C21 /* mtp3accesslist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A603430E1EA9C3BE00706C21 /* Build configuration list for PBXNativeTarget "mtp3accesslist" */;
+			buildPhases = (
+				A60342F51EA9C3BE00706C21 /* Sources */,
+				A60342F61EA9C3BE00706C21 /* Frameworks */,
+				A60342F71EA9C3BE00706C21 /* Headers */,
+				A60342F81EA9C3BE00706C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mtp3accesslist;
+			productName = mtp3accesslist;
+			productReference = A60342FA1EA9C3BE00706C21 /* mtp3accesslist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A60343021EA9C3BE00706C21 /* mtp3accesslistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60343111EA9C3BE00706C21 /* Build configuration list for PBXNativeTarget "mtp3accesslistTests" */;
+			buildPhases = (
+				A60342FF1EA9C3BE00706C21 /* Sources */,
+				A60343001EA9C3BE00706C21 /* Frameworks */,
+				A60343011EA9C3BE00706C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60343061EA9C3BE00706C21 /* PBXTargetDependency */,
+			);
+			name = mtp3accesslistTests;
+			productName = mtp3accesslistTests;
+			productReference = A60343031EA9C3BE00706C21 /* mtp3accesslistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60342F11EA9C3BE00706C21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andreas Fink";
+				TargetAttributes = {
+					A60342F91EA9C3BE00706C21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2GSNWPNR77;
+						ProvisioningStyle = Automatic;
+					};
+					A60343021EA9C3BE00706C21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2GSNWPNR77;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A60342F41EA9C3BE00706C21 /* Build configuration list for PBXProject "mtp3accesslist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A60342F01EA9C3BE00706C21;
+			productRefGroup = A60342FB1EA9C3BE00706C21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60342F91EA9C3BE00706C21 /* mtp3accesslist */,
+				A60343021EA9C3BE00706C21 /* mtp3accesslistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60342F81EA9C3BE00706C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60343011EA9C3BE00706C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60342F51EA9C3BE00706C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60343151EA9C3E500706C21 /* mtp3accesslist.m in Sources */,
+				A603431F1EA9C66800706C21 /* UMMTP3AccessListEntry.m in Sources */,
+				A603431B1EA9C4EE00706C21 /* UMMTP3AccessList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60342FF1EA9C3BE00706C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60343091EA9C3BE00706C21 /* mtp3accesslistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60343061EA9C3BE00706C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60342F91EA9C3BE00706C21 /* mtp3accesslist */;
+			targetProxy = A60343051EA9C3BE00706C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A603430C1EA9C3BE00706C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A603430D1EA9C3BE00706C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A603430F1EA9C3BE00706C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = mtp3accesslist/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fink.mtp3accesslist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A60343101EA9C3BE00706C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = mtp3accesslist/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fink.mtp3accesslist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A60343121EA9C3BE00706C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				INFOPLIST_FILE = mtp3accesslistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fink.mtp3accesslistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A60343131EA9C3BE00706C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				INFOPLIST_FILE = mtp3accesslistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fink.mtp3accesslistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60342F41EA9C3BE00706C21 /* Build configuration list for PBXProject "mtp3accesslist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A603430C1EA9C3BE00706C21 /* Debug */,
+				A603430D1EA9C3BE00706C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A603430E1EA9C3BE00706C21 /* Build configuration list for PBXNativeTarget "mtp3accesslist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A603430F1EA9C3BE00706C21 /* Debug */,
+				A60343101EA9C3BE00706C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A60343111EA9C3BE00706C21 /* Build configuration list for PBXNativeTarget "mtp3accesslistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60343121EA9C3BE00706C21 /* Debug */,
+				A60343131EA9C3BE00706C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60342F11EA9C3BE00706C21 /* Project object */;
+}
