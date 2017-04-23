@@ -22,7 +22,7 @@ int         plugin_exit(void)
 
 NSString *  plugin_name(void)
 {
-    return @"mtp3-accesslist";
+    return @"mtp3accesslist";
 }
 
 UMPlugin *  plugin_create(void)
@@ -30,22 +30,16 @@ UMPlugin *  plugin_create(void)
     return [[UMMTP3AccessList alloc]init];
 }
 
-NSString *plugin_version(void)
+NSDictionary *plugin_info(void)
 {
-    return @(VERSION);
+    return @{
+             @"type" : @"mtp3-pointcode-filter",
+             @"version": @(VERSION),
+             @"name" : plugin_name(),
+             @"build" : @(BUILD),
+             @"builddate" : @(BUILDDATE),
+             @"compiledate" : @(COMPILEDATE)
+            };
 }
 
-NSString *plugin_build(void)
-{
-    return @(BUILD);
-}
 
-NSString *plugin_builddate(void)
-{
-    return @(BUILDDATE);
-}
-
-NSString *plugin_compiledate(void)
-{
-    return @(COMPILEDATE);
-}

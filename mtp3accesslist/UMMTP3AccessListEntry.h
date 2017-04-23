@@ -21,5 +21,6 @@
 
 - (UMMTP3AccessListEntry *)initWithString:(NSString *)cfgLine variant:(UMMTP3Variant)variant;
 - (UMMTP3Filter_Result)filterPointcode:(UMMTP3PointCode *)xpc;
+- (NSString *)config;
 
 @end

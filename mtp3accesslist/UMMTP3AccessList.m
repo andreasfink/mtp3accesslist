@@ -11,6 +11,15 @@
 
 @implementation UMMTP3AccessList
 
+- (UMMTP3AccessList *)init
+{
+    self = [super init];
+    if(self)
+    {
+        _config = @[];
+    }
+    return self;
+}
 
 - (void)configUpdate
 {
@@ -29,6 +38,17 @@
         _configEntries = entries;
     }
 }
+
+- (NSArray *)config
+{
+    NSMutableArray *cfg = [[NSMutableArray alloc]init];
+    for(UMMTP3AccessListEntry *entry in _configEntries)
+    {
+        [cfg addObject:[entry config]];
+    }
+    return cfg;
+}
+
 
 - (UMMTP3Filter_Result)filterPointcode:(UMMTP3PointCode *)xpc
 {
