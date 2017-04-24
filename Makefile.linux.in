@@ -1,6 +1,6 @@
 # File: Makefile
-# Project "ulibdb"
-# (c) 2016 Andreas Fink
+# Project "mtp3accesslist"
+# (c) 2017 Andreas Fink
 # Create: Andreas Fink (andreas@fink.org)
 #
 #
@@ -10,29 +10,24 @@ CFLAGS=@CFLAGS@
 CONFIGURATION=Release
 LDFLAGS=@LDFLAGS@
 
-LIB=libulibsmpp.so
-PKGCONFIGFILE=ulibsmpp.pc
+LIB=plugin_mtp3accesslist
 
-MFILES = $(wildcard Classes/*.m) $(wildcard Classes/*/*.m)
-HFILES = version.h $(wildcard Classes/*.h) $(wildcard Classes/*/*.h)
+MFILES = $(wildcard mtp3accesslist/*.m) $(wildcard mtp3accesslist/*/*.m)
+HFILES = version.h $(wildcard mtp3accesslist/*.h) $(wildcard mtp3accesslist/*/*.h)
 MOFILES  = $(MFILES:.m=.m.o)
 OFILES = $(MOFILES)
 
-INCLUDEDIRS = -I Classes/UniversalSMPP -I Classes/UniversalSMSC  -I Classes/UniversalEMIUCP -I Classes/UniversalSMSUtilities -I Classes
+INCLUDEDIRS = -I mtp3accesslist
 
-DEBUG_RELEASE = -DCONFIGURATION_${CONFIGURATION}=1 -DCONFIGURATION=${CONFIGURATION}
+DEBUG_RELEASE = -DCONFIGURATION_${CONFIGURATION}=1 -DCONFIGURATION=${CONFIGURATION}=1
 
 ${LIB}: ${OFILES}
 	./make_version
 	${CC} -shared -o ${LIB}  ${LDFLAGS} ${OFILES} ${LIBS} ${STATIC_LIBS}
 
 install: ${LIB}
-	-mkdir -p ${DESTDIR}/usr/local/lib/pkgconfig
-	-install -b -g root -o root -m 644 ${LIB} ${DESTDIR}/usr/local/lib/
-	-install -b -g root -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
-	-mkdir -p ${DESTDIR}/usr/local/include/ulibsmpp
-	cp $(HFILES) ${DESTDIR}/usr/local/include/ulibsmpp
-	ldconfig
+	-mkdir -p ${DESTDIR}/opt/universalss7/mtp3/plugins
+	-install -b -g root -o root -m 644 ${LIB} ${DESTDIR}/opt/universalss7/mtp3/plugins
 
 clean:
 	rm -f $(LIB) $(OFILES)
